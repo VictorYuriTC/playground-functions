@@ -20,7 +20,7 @@ function splitSentence() {
 // Desafio 4
 function concatName(names) {
   for (let index = 0; index < names.length; index += 1) {
-    return names['0'];
+    return names[index], names[0];
   }
 }
 
@@ -33,14 +33,21 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if ((cat1 + cat2) / 2 === mouse) {
+    return 'os gatos trombam e o rato foge';
+  } else if ((cat1 - mouse) < (cat2 - mouse)) {
+    return 'cat1';
+  } else if ((cat2 - mouse) < (cat1 - mouse)) {
+    return 'cat2';
+  }
 }
+
 
 // Desafio 8
 function fizzBuzz() {
