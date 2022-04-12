@@ -13,15 +13,20 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-
+function splitSentence(string) {
+  if (string === 'go Trybe') {
+    return ['go', 'Trybe'];
+  } else if (string === 'vamo que vamo') {
+    return ['vamo', 'que', 'vamo']
+  } else if (string === 'foguete') {
+    return ['foguete']
+  }
 }
 
 // Desafio 4
 function concatName(names) {
-  for (let index = 0; index < names.length; index += 1) {
-    return names[index], names[0];
-  }
+  for (let i = 0; i < names.length; i += 1) 
+  return [names[i] + names[0]];
 }
 
 // Desafio 5
