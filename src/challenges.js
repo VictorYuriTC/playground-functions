@@ -25,8 +25,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(names) {
-  for (let i = 0; i < names.length; i += 1) 
-  return [names[i] + names[0]];
+    return names[names.length - 1] + ', ' + names[0]
 }
 
 // Desafio 5
@@ -75,7 +74,7 @@ function fizzBuzz(numeros) {
 
 // Desafio 9
 function encode() {
-  // seu código aqui
+  
 }
 function decode() {
   // seu código aqui
