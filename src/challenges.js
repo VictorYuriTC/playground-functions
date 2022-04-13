@@ -80,8 +80,8 @@ function decode() {
 // Desafio 10
 function techList(tech, name) {
   let myTech = [];
-  let orderedTech = myTech.sort();
-  if (tech === []) {
+  tech.sort();
+  if (tech.length < 1) {
     return 'Vazio!'
   } else {
     for (let index = 0; index < tech.length; index += 1) {
@@ -91,8 +91,8 @@ function techList(tech, name) {
       }
     myTech.push(eachTech)
     }
-    return orderedTech;
   }
+  return myTech;
 }
 
 module.exports = {
