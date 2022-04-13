@@ -38,7 +38,7 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-  let
+  
 }
 
 // Desafio 7
@@ -78,8 +78,21 @@ function decode() {
 }
 
 // Desafio 10
-function techList(myTech) {
-  
+function techList(tech, name) {
+  let myTech = [];
+  let orderedTech = myTech.sort();
+  if (tech === []) {
+    return 'Vazio!'
+  } else {
+    for (let index = 0; index < tech.length; index += 1) {
+      let eachTech = {
+        tech: tech[index],
+        name: name
+      }
+    myTech.push(eachTech)
+    }
+    return orderedTech;
+  }
 }
 
 module.exports = {
