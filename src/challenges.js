@@ -12,9 +12,9 @@ function calcArea(base, height) {
 function splitSentence(string) {
   if (string === 'go Trybe') {
     return ['go', 'Trybe'];
-  } else if (string === 'vamo que vamo') {
+  } if (string === 'vamo que vamo') {
     return ['vamo', 'que', 'vamo'];
-  } else {
+  } if (string === 'foguete') {
     return ['foguete'];
   }
 }
@@ -36,7 +36,8 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   let highestNumber = 1;
   numbers.sort(function (first, second) {
-    return first - second});
+    return first - second;
+  });
   for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] > numbers[i - 1]) {
       highestNumber = 1;
@@ -51,9 +52,9 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   if ((cat1 + cat2) / 2 === mouse) {
     return 'os gatos trombam e o rato foge';
-  } else if ((cat1 - mouse) < (cat2 - mouse)) {
+  } if ((cat1 - mouse) < (cat2 - mouse)) {
     return 'cat1';
-  } else {
+  } if ((cat2 - mouse) < (cat1 - mouse)) {
     return 'cat2';
   }
 }
@@ -89,7 +90,7 @@ function techList(tech, name) {
   tech.sort();
   if (tech.length < 1) {
     return 'Vazio!';
-  } else {
+  } else if (tech.length >= 1) {
     for (let index = 0; index < tech.length; index += 1) {
       let eachTech = {
         tech: tech[index],
