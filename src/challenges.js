@@ -21,7 +21,7 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(names) {
-  return names[names.length - 1] + ', ' + names[0];
+  return `${names[names.length - 1]}, ${names[0]}`;
 }
 
 // Desafio 5
@@ -50,11 +50,11 @@ function highestCount(numbers) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if ((cat1 + cat2) / 2 === mouse) {
+  if (cat1 + cat2 / 2 === mouse) {
     return 'os gatos trombam e o rato foge';
-  } if ((cat1 - mouse) < (cat2 - mouse)) {
+  } if (cat1 - mouse < cat2 - mouse) {
     return 'cat1';
-  } if ((cat2 - mouse) < (cat1 - mouse)) {
+  } if (cat2 - mouse < cat1 - mouse) {
     return 'cat2';
   }
 }
@@ -63,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numeros) {
   let afterModulus = [];
   for (let indice = 0; indice < numeros.length; indice += 1) {
-    if (numeros[indice] % 3 === 0 && numeros[indice] % 5 === 0) {
+    if (numeros[indice] % 15 === 0) {
       afterModulus.push('fizzBuzz');
     } else if (numeros[indice] % 3 === 0) {
       afterModulus.push('fizz');
@@ -85,16 +85,16 @@ function decode() {
 }
 
 // Desafio 10
-function techList(tech, name) {
+function techList(tech, nome) {
   let myTech = [];
   tech.sort();
   if (tech.length < 1) {
     return 'Vazio!';
-  } else if (tech.length >= 1) {
+  } if (tech.length >= 1) {
     for (let index = 0; index < tech.length; index += 1) {
       let eachTech = {
+        name: nome,
         tech: tech[index],
-        name: name,
       };
       myTech.push(eachTech);
     }
