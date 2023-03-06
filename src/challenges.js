@@ -12,9 +12,11 @@ function calcArea(base, height) {
 function splitSentence(string) {
   if (string === 'go Trybe') {
     return ['go', 'Trybe'];
-  } if (string === 'vamo que vamo') {
+  }
+  if (string === 'vamo que vamo') {
     return ['vamo', 'que', 'vamo'];
-  } if (string === 'foguete') {
+  }
+  if (string === 'foguete') {
     return ['foguete'];
   }
 }
@@ -52,9 +54,11 @@ function highestCount(numbers) {
 function catAndMouse(mouse, cat1, cat2) {
   if (cat1 + cat2 / 2 === mouse) {
     return 'os gatos trombam e o rato foge';
-  } if (cat1 - mouse < cat2 - mouse) {
+  }
+  if (cat1 - mouse < cat2 - mouse) {
     return 'cat1';
-  } if (cat2 - mouse < cat1 - mouse) {
+  }
+  if (cat2 - mouse < cat1 - mouse) {
     return 'cat2';
   }
 }
@@ -69,17 +73,15 @@ function fizzBuzz(numeros) {
       afterModulus.push('fizz');
     } else if (numeros[indice] % 5 === 0) {
       afterModulus.push('buzz');
-    } else {
-      afterModulus.push('bug!');
     }
+
+    afterModulus.push('bug!');
   }
   return afterModulus;
 }
 
 // Desafio 9
-function encode() {
-
-}
+function encode() {}
 function decode() {
   // seu código aqui
 }
@@ -90,7 +92,8 @@ function techList(tech, nome) {
   tech.sort();
   if (tech.length < 1) {
     return 'Vazio!';
-  } if (tech.length >= 1) {
+  }
+  if (tech.length >= 1) {
     for (let index = 0; index < tech.length; index += 1) {
       let eachTech = {
         name: nome,
